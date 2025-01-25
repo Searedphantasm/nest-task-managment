@@ -1,7 +1,7 @@
 import { Module } from "@nestjs/common";
 import { TasksModule } from "./tasks/tasks.module";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { AuthModule } from './auth/auth.module';
+import { AuthModule } from "./auth/auth.module";
 
 @Module({
   imports: [
@@ -10,8 +10,8 @@ import { AuthModule } from './auth/auth.module';
       type: "postgres",
       host: "localhost",
       port: 5432,
-      username: "postgres",
-      password: "parsa@12345",
+      username: "test",
+      password: "test",
       database: "task-management",
       autoLoadEntities: true,
       synchronize: true, // always keep the schema in synch with database
